@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::111122223333:role/my-role
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - groups:
+      - expense-trainee
+      userarn:
+   # copy IAM user arn above
+      username: # use name of the user here
+kind: ConfigMap
+metadata: 
+  creationTimeStamp: "2024-12-25T03:14:15Z"
+  name: aws-auth
+  namespace: kube-system
+  #resourceVersion: "1386"
+  uid: 7c41c4b2-f380-4fe0-91b7-6035fd37f2dc
