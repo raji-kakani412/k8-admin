@@ -15,7 +15,7 @@ metadata:
   namespace: expense
 subjects:
 - kind: User
-  name: Ramesh
+  name: Suresh
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
@@ -39,7 +39,7 @@ metadata:
   namespace: expense
 subjects:
 - kind: User
-  name: Suresh
+  name: Ramesh
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
@@ -61,7 +61,7 @@ metadata:
   name: expense
 subjects:
 - kind: User
-  name: Suresh
+  name: Ramesh
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole

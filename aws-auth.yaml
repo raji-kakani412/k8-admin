@@ -9,9 +9,12 @@ data:
   mapUsers: |
     - groups:
       - expense-trainee
-      userarn:
-   # copy IAM user arn above
-      username: # use name of the user here
+      userarn: arn:aws:iam::545009839752:user/Suresh 
+      username: Suresh
+    - groups:
+      - expense-admin
+      userarn: arn:aws:iam::545009839752:user/Ramesh
+      username: Ramesh
 kind: ConfigMap
 metadata: 
   creationTimeStamp: "2024-12-25T03:14:15Z"
